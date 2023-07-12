@@ -6,7 +6,8 @@ class ReactiveEffect {
 
   run() {
     activeEffect = this; //获取实例对象
-    this._fn();
+
+    return this._fn();
   }
 }
 
@@ -46,4 +47,6 @@ export function effect(fn) {
   const _effect = new ReactiveEffect(fn);
 
   _effect.run();
+
+  return _effect.run.bind(_effect);
 }
