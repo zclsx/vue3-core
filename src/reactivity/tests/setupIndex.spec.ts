@@ -6,6 +6,6 @@ import { add } from "../index";
 //yarn add --dev @babel/preset-typescript
 it("init", () => {
   expect(add(1, 1)).toBe(2);
-  //1.集成 yarn add typescript --dev/  TS npx tsc --init   /  tsconif文件
+  //1.集成 yarn add typescript --dev/  TS npx tsc --init   /  tsconfig文件
   //2.引入yarn add jest @types/jest --dev
 });
